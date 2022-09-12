@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="user-scalable=yes,width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1.0" />
     <title>首页</title>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <script src="js/jquery.js" charset="utf-8"></script>
@@ -11,31 +11,61 @@
     <base href="images/"/>
 </head>
 <body>
-<div id="top">
-    <img src="symbol.png" width="102" height="76"/>
-    <div class="menu-icon"></div>
-</div>
+    <div id="top">
+        <img src="symbol.png" width="102" height="76" />
+        <img src="font.png" id="font" />
+        <div class="menu-icon"></div>
+    </div>
     <div id="topmenu">
         <ul>
-            <li>你</li>
-            <li  onclick="addlove()" width="100%">收藏</li>
+            <li onclick="if (sessionStorage.getItem('user') == null)window.open('../login.html')" id="myuser">未登录</li>
+            <li onclick="addlove()" width="100%">收藏</li>
             <li onclick="out1()" width="100%">关于</li>
         </ul>
     </div>
     <div id="head">
         <ul id="headlist">
-         <li>首页</li>
-            <li>介绍</li>
-            <li>技术种类总结</li>
-            <li>目前的实现、制作</li>
-            <li>在读书籍及摘录</li>
-            <li>维护记录</li>
+            <li onclick="window.open('../index.html')">首页</li>
+            <li onclick="window.open('../introduction.html')">介绍</li>
+            <li onclick="window.open('../article.html')">文章</li>
+            <li onclick="window.open('../source.html')">学习资源</li>
+            <li onclick="window.open('../technology.html')">技术介绍</li>
+            <li onclick="window.open('../update.html')">维护记录</li>
         </ul>
     </div>
     <div id="content">
-        <div></div>
-        <div id="introduce"><img src="introduce.png" height="100"/>这个是由萌狸制作的网站。<br />主要是记录各类技术的总结以及目前参与的项目作品。<p>如果有错误的地方，那就错下去吧。<img src="introduce-no.png" height="40"/></p></div>
+        <div id="read">
 
+        </div>
+        <div id="index">
+            <div id="index-text">如果每天你都在前往图书馆的路上见到这霞光<br />恰恰证明你的世界正在迎来曙光</div>
+        </div>
+        <br /><br />
+        <div class="read" id="read1">
+            <img src="一级.png" width="50" />
+            <div>
+                我们为初学者准备了一些有助于学习的文章。<br />既有关于培养编程素养的感想，<br />也有关于编程技术的总结。
+                <br />在上手编程的时候阅读这些文章<br />能够帮助你有效提高编程效率，<br />更快到达获得独立制作的能力。
+            </div>
+            <input type="button" value="点击查看-->" id="jump1" class="jump" onclick="window.open('../article.html')"/>
+        </div>
+        <br /><br /><br /><br /><br />
+        <div class="read" id="read2">
+            <img src="二级.png" width="50" />
+            <div>
+                在提供文章之外，我们还准备了一些学习资源。<br />包括一些相关的视频(以B站为主)<br />和一些有利于学习的网站、
+                <br />许多的知识都是有前人总结的,<br />许多的技术都是有前人实现过的。<br />学习前人的知识能够让我们少走很多弯路。
+            </div>
+            <input type="button" value="点击查看-->" id="jump2" class="jump" onclick="window.open('../source.html')"/>
+        </div>
+        <div class="read" id="read3">
+            <img src="三级.png" width="50" />
+            <div>
+                我们还整理好了一些技术，<br />将他们分类，<br />同时对其进行介绍。<br />这样方便初学者理清所需的技术<del>以及编程之路的困难</del><br />
+                您可以依照整理逐步学习，<br />也可以据此进行查漏补缺。
+            </div>
+            <input type="button" value="点击查看-->" id="jump3" class="jump" onclick="window.open('../technology.html')"/>
+        </div>
     </div>
     <div id="foot"></div>
 </body>
