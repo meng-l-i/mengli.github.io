@@ -1,0 +1,82 @@
+﻿* {
+    z-index: 1;
+    cursor:context-menu;
+}
+body {
+    overflow-x: hidden;
+}
+.menu-icon {
+    width: 30px;
+    height: 5px; /*中间线长度*/
+    background-color: #00ede5; /*中间线颜色*/
+    border-top: 5px solid #00ede5; /*第一条线长度与颜色*/
+    border-bottom: 5px solid #00ede5; /*第三条线长度与颜色*/
+    padding: 5px 0; /*三条线距离*/
+    background-clip: content-box;/*这个是指背景只适用与内容部分，不会适用在整个盒子*/
+   float:right;
+}
+#topmenu{/*按了按钮的菜单*/
+    position:fixed;
+    left:90%;
+    background-color:lightskyblue;
+    width:10%;
+    z-index:5;
+    bottom:85%;
+}
+    #topmenu > ul {
+        list-style: none;
+        color:white;
+        text-align:center;
+    }
+    #topmenu > ul >li{
+        border-top: solid;
+    }
+    #about{
+        position:fixed;
+    width:30%;
+    bottom:43%;
+    left:33%;
+    height:20%;
+    border-color:deepskyblue;
+    border-radius:25px;
+    background-color:lavenderblush;
+    text-align:center;
+    vertical-align:middle;
+    color:dodgerblue;
+    z-index:5;
+        }
+    #headlist{/*导航栏*/
+        width:100%;
+    }
+        #headlist > li {
+            list-style-type: none;
+            display: inline-block;
+            width: 15%;
+            background-color: palegreen;
+            text-align: center;
+            height: 30px;
+            vertical-align: middle;
+            /* border-right-style:solid;*/
+        }
+        #introduce{
+        }
+        #introduce>img{
+            position:relative;
+float:left;            
+        }
+        #font{
+            position:absolute;
+            left:32%;
+            top:0px;
+        }
+        #index{
+            background-image:url('../images/index.jpg');
+            height:512px;
+            width:911px;
+            float:right;
+            display:inline-block;
+        }
+#content img{
+    width:700px;
+    height:400px;
+}
