@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1.0" />
+    <title>技术介绍</title>
+    <script src="js/jquery.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/technology.css" />
+    <link rel="stylesheet" href="js/aos/dist/aos.css" />
+    <script>
+        window.onload = res => {
+            var script = document.createElement('script');
+            script.setAttribute('type', 'text/javascript');
+            script.setAttribute('src', '../js/aos/dist/aos.js');
+            document.body.appendChild(script);//由于不可抗力因素，在aos内部初始化
+        }
+    </script>
+    <script src="js/technology.js" charset="utf-8"></script>
+    <meta name="author" cotent="萌狸" />
+    <base href="images/" target="_blank" />
+</head>
+<body>
+    <div id="top">
+        <img src="symbol.png" width="102" height="76" />
+        <img src="font.png" id="font" />
+        <div class="menu-icon"></div>
+    </div>
+    <div id="topmenu">
+        <ul>
+            <li onclick="if (sessionStorage.getItem('user') == null)window.open('../login.html')" id="myuser">未登录</li>
+            <li onclick="addlove()" width="100%">收藏</li>
+            <li onclick="out1()" width="100%">关于</li>
+        </ul>
+    </div>
+    <div id="head">
+        <ul id="headlist">
+            <li onclick="window.open('../index.html')">首页</li>
+            <li onclick="window.open('../introduction.html')">介绍</li>
+            <li onclick="window.open('../article.html')">文章</li>
+            <li onclick="window.open('../source.html')">学习资源</li>
+            <li onclick="window.open('../technology.html')">技术介绍</li>
+            <li onclick="window.open('../update.html')">维护记录</li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="jumplan">
+            <ul>
+                <li><a href="../technology.html#01" target="_self"><img src="跳转.png" />前端开发(网页)</a></li>
+                <li><a href="../technology.html#02" target="_self"><img src="跳转.png" />程序开发</a></li>
+                <li><a href="../technology.html#03" target="_self"><img src="跳转.png" />数据处理</a></li>
+                <li><a href="../technology.html#04" target="_self"><img src="跳转.png" />数据存储</a></li>
+                <li><a href="../technology.html#05" target="_self"><img src="跳转.png" />数据查询与传输</a></li>
+            </ul>
+        </div>
+        <!--<div id="wall">
+
+        </div>-->
+        <div id="tip">如果过了2秒仍然能看到该提示，请刷新</div>
+        <div class="show" data-aos-ahchor-placement="center-center" data-aos="slide-right" data-aos-offset="0" data-aos-duration="1500" id="01">
+            <img src="js.png" class="showimg" data-aos="zoom-in-down" data-aos-delay="0" data-aos-duration="1500" id="js" />
+            <br />
+            <img src="html.png" class="showimg" data-aos="zoom-in-down" data-aos-delay="0" data-aos-duration="1500" />
+            &nbsp&nbsp&nbsp&nbsp
+            前端开发(网页)
+            &nbsp&nbsp&nbsp&nbsp
+            <img src="css.png" class="showimg" data-aos="bottom-in-bottom" data-aos-delay="0" data-aos-duration="1500" />
+        </div>
+        <div class="show" data-aos-ahchor-placement="center-center" data-aos="slide-left" data-aos-offset="0" data-aos-duration="1500" id="02">
+            <img src="Python.png" class="showimg" data-aos="flip-right" data-aos-delay="0" data-aos-duration="3000" />
+            <span class="detail">Python</span>
+            <br />
+            <img src="C++语言.png" class="showimg" data-aos="flip-up" data-aos-delay="0" data-aos-duration="3000" />
+            &nbsp&nbsp&nbsp&nbsp
+            程序开发
+            &nbsp&nbsp&nbsp&nbsp
+            <img src="java.png" class="showimg" data-aos="flip-up" data-aos-delay="0" data-aos-duration="3000" />
+            <span class="detail">java</span>
+        </div>
+        <div class="show" data-aos-ahchor-placement="center-center" data-aos="fade-down-right" data-aos-offset="0" data-aos-duration="1500" id="03">
+            <img src="NumPy.png" class="showimg" data-aos="zoom-in-down" data-aos-delay="0" data-aos-duration="1500" data-aos-ahchor-placement="top-bottom" />
+            <br />
+            <img src="R语言.png" class="showimg" data-aos="zoom-in-down" data-aos-delay="0" data-aos-duration="1500" />
+            <span class="detail">R语言</span>
+            &nbsp&nbsp&nbsp&nbsp
+            数据处理
+            &nbsp&nbsp&nbsp&nbsp
+            <img src="julia.png" class="showimg" data-aos="zoom-in-down" data-aos-delay="0" data-aos-duration="1500" />
+            <span class="detail">julia</span>
+        </div>
+        <div class="show" data-aos-ahchor-placement="center-center" data-aos="fade-up-left" data-aos-offset="0" data-aos-duration="1500" id="04">
+            <img src="MySQL.png" class="showimg" data-aos="zoom-in-down" data-aos-delay="0" data-aos-duration="1500" data-aos-ahchor-placement="top-bottom" />
+            <span class="detail">MySQL</span>
+            <br />
+            <img src="oracle.png" class="showimg" data-aos="zoom-in-down" data-aos-delay="0" data-aos-duration="1500" />
+            <span class="detail">oracle</span>
+            &nbsp&nbsp&nbsp&nbsp
+            数据存储
+            &nbsp&nbsp&nbsp&nbsp
+            <img src="Microsoft-Access.png" class="showimg" data-aos="zoom-in-down" data-aos-delay="0" data-aos-duration="1500" />
+            <span class="detail">Microsoft-Access</span>
+        </div>
+        <div class="show" data-aos-ahchor-placement="center-center" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1500" id="05">
+            <img src="SQL.png" class="showimg" data-aos="zoom-in-down" data-aos-delay="0" data-aos-duration="1500" data-aos-ahchor-placement="top-bottom" />
+            <span class="detail">SQL</span>
+            <br />
+            <img src="xml.png" class="showimg" data-aos="zoom-in-down" data-aos-delay="0" data-aos-duration="1500" />
+            <span class="detail">xml</span>
+            &nbsp&nbsp&nbsp&nbsp
+            数据查询与传输
+            &nbsp&nbsp&nbsp&nbsp
+            <img src="json.png" class="showimg" data-aos="zoom-in-down" data-aos-delay="0" data-aos-duration="1500" />
+            <span class="detail">json</span>
+        </div>
+        <!--<table cellspacing="30">
+            <tr>
+                <td id="web">web前端制作</td>
+                <td id="backweb">后端制作</td>
+               <td id="software">软件制作</td>
+            </tr>
+            <tr>
+                <td id="database">数据库</td>
+                <td id="explaindata">数据分析</td>
+            </tr>
+        </table>-->
+    </div>
+    <div id="foot"></div>
+</body>
+</html>

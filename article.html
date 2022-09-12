@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1.0" />
+    <title>学习文章</title>
+    <link rel="stylesheet" type="text/css" href="css/article.css" />
+    <script src="js/jquery.js" charset="utf-8"></script>
+    <script src="js/article.js" charset="utf-8"></script>
+    <meta name="author" cotent="萌狸" />
+    <base href="images/" target="_blank"/>
+</head>
+<body>
+    <div id="top">
+        <img src="symbol.png" width="102" height="76" />
+        <img src="font.png" id="font" />
+        <div class="menu-icon"></div>
+    </div>
+    <div id="topmenu">
+        <ul>
+            <li onclick="if (sessionStorage.getItem('user') == null)window.open('../login.html')" id="myuser">未登录</li>
+            <li onclick="addlove()" width="100%">收藏</li>
+            <li onclick="out1()" width="100%">关于</li>
+        </ul>
+    </div>
+    <div id="head">
+        <ul id="headlist">
+            <li onclick="window.open('../index.html')">首页</li>
+            <li onclick="window.open('../introduction.html')">介绍</li>
+            <li onclick="window.open('../article.html')">文章</li>
+            <li onclick="window.open('../source.html')">学习资源</li>
+            <li onclick="window.open('../technology.html')">技术介绍</li>
+            <li onclick="window.open('../update.html')">维护记录</li>
+        </ul>
+    </div>
+    <div id="content">
+        <table cellspacing="30">
+            <tr>
+                <td>
+                    <div id="article1">
+                        <img src="article1.png" />
+                        <p class="brief">云志C语言编程讲述了C、C++中比较难的点<br />(例如多态、指针、空间管理等等。)<br />除此之外，还讲述了一些关于C语言应用的感想。<br />(例如为什么有些游戏服务端用C++写，面试的技巧等等)</p>
+                        <p class="author">-泰安樱桃园(知乎)</p>
+                        <input type="button" class="jump" value="-点击查看-" />
+                    </div>
+                </td>
+                <td>
+                    <div id="article2">
+                        <img src="article2.png" />
+                        <p class="brief">一切的起源、问题及问题的求解：<br />编程思想与世界观：<br />编程思想的进化:(三类)<br />软件开发的工作是什么？</p>
+                        <p class="author">-zzfx(博客园)</p>
+                        <input type="button" class="jump" value="-点击查看-" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="article3">
+                        <img src="article3.png" />
+                        <p class="brief">认识计算机:<br />三种编程思想:<br />学习的建议:<br />实践的建议:<br /></p>
+                        <p class="author">-素然年华(简书)</p>
+                        <input type="button" class="jump" value="-点击查看-" />
+                    </div>
+                </td>
+                <td>
+                    <div id="article4">
+                        <img src="article4.png" />
+                        <p class="brief">为什么要学习新知识？(会什么是你的下限，能够会什么是你的上限)<br />如何快速学习一门新技术？<br />如何阅读源码？<br />学习的需求是什么？</p>
+                        <p class="author">-前端yc(知乎)</p>
+                        <input type="button" class="jump" value="-点击查看-" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="article5">
+                        <img src="article5.png" />
+                        <p class="brief">顶级程序员在思维模式上的五个特别之处：<br />勇于去研究你不懂的代码<br />精通代码调试(debug)<br />重视能够节约时间的工具<br />优化你的迭代速度<br />系统性的思考方式</p>
+                        <p class="author">-车卡门(知乎)</p>
+                        <input type="button" class="jump" value="-点击查看-" />
+                    </div>
+                </td>
+                <td>
+                    <div id="article6">
+                        <img src="article6.png" />
+                        <p class="brief">
+                            软件开发的三个方向：<br />业务方向：你负责把人类的语言转化成代码，让机器按照特定的流程，规范去做特定的事情<br />
+                            语言方向：你负责提升程序员的开发感受和效率<br />算法方向：你负责提升机器本身的执行效率<br />业务逻辑的重要性
+                        </p>
+                        <p class="author">-喵呜大将军(知乎)</p>
+                        <input type="button" class="jump" value="-点击查看-" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="foot"></div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=yes,width=device-width, initial-scale=1.0" />
+    <title>介绍</title>
+    <link rel="stylesheet" type="text/css" href="css/introduction.css" />
+    <script src="js/jquery.js" charset="utf-8"></script>
+    <script src="js/introduction.js" charset="utf-8"></script>
+    <meta name="author" cotent="萌狸" />
+    <base href="images/"/>
+</head>
+<body>
+    <div id="top">
+        <img src="symbol.png" width="102" height="76" />
+        <div class="menu-icon"></div>
+    </div>
+    <div id="topmenu">
+        <ul>
+            <li onclick="if (sessionStorage.getItem('user') == null)window.open('../login.html')" id="myuser">未登录</li>
+            <li onclick="addlove()" width="100%">收藏</li>
+            <li onclick="out1()" width="100%">关于</li>
+        </ul>
+    </div>
+    <div id="head">
+        <ul id="headlist">
+            <li onclick="window.open('../index.html')">首页</li>
+            <li onclick="window.open('../introduction.html')">介绍</li>
+            <li onclick="window.open('../article.html')">文章</li>
+            <li onclick="window.open('../source.html')">学习资源</li>
+            <li onclick="window.open('../technology.html')">技术介绍</li>
+            <li onclick="window.open('../update.html')">维护记录</li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="introduceme" class="introduce">
+            <div class="content">
+                <img src="introduce.png" height="100" />
+                <br />
+                这个是由李泽鹏制作的网站。<br />
+                <p>如果有错误的地方，请联系我并指正<br /><img src="introduce-no.png" height="40" /></p>
+            </div>
+        </div>
+        <div id="introducewhat" class="introduce">
+            <div class="content">
+                <img src="靶子.png" />
+                <br />
+                <del>该网站的目的是作为web开发的大作业上交(误)</del>
+                <br />
+                该网站的目的是帮助一些没有学习资源以及学习计划
+                <br />
+                被庞大的编程信息所击败的人
+                <br />
+                为了更好的回报社会，帮助人们快速学会编程
+                <br />
+                就有了这个网站
+            </div>
+        </div>
+        <div id="introducewhy" class="introduce">
+            <div class="content">
+                <img src="书包，学习.png" />
+                <br />
+                如果你想要利用该网站进行学习<br />
+                请务必认清一个现实<br />
+                仅凭这些资料是不足以到达"能独立制作"的标准的<br />
+                你仍然需要大量的去搜索网络的相关资料<br />
+                阅读大佬们的代码<br />
+                <br />
+                明白了上述情况后，就请立刻着手学习吧！
+            </div>
+        </div>
+    </div>
+    <div id="tip">
+        <img src="上下箭头.png" id="upanddown" />
+    </div>
+    <div id="foot"></div>
+</body>
+</html>

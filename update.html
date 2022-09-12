@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1.0" />
+    <title>维护记录</title>
+    <script src="js/jquery.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <script src="js/login.js" charset="utf-8"></script>
+    <meta name="author" cotent="萌狸" />
+    <base href="images/" target="_blank" />
+</head>
+<body>
+    <div id="top">
+        <img src="symbol.png" width="102" height="76" />
+        <img src="font.png" id="font" />
+        <div class="menu-icon"></div>
+    </div>
+    <div id="topmenu">
+        <ul>
+            <li onclick="if (sessionStorage.getItem('user') == null)window.open('../login.html')" id="myuser">未登录</li>
+            <li onclick="addlove()" width="100%">收藏</li>
+            <li onclick="out1()" width="100%">关于</li>
+        </ul>
+    </div>
+    <div id="head">
+        <ul id="headlist">
+            <li onclick="window.open('../index.html')">首页</li>
+            <li onclick="window.open('../introduction.html')">介绍</li>
+            <li onclick="window.open('../article.html')">文章</li>
+            <li onclick="window.open('../source.html')">学习资源</li>
+            <li onclick="window.open('../technology.html')">技术介绍</li>
+            <li onclick="window.open('../update.html')">维护记录</li>
+        </ul>
+    </div>
+    <div id="content">
+        这是该网站的维护记录<br />
+        你可以通过这里来确认是否是最新版本以及网页的更新状况<br /><br />
+        <table style="width:100%;text-align:center;">
+            <tr>
+                <td>2022-6-8</td>
+                <td>制作登录注册及维护记录页面</td>
+            </tr>
+            <tr>
+                <td>2022-6-3</td>
+                <td>制作文章页面</td>
+            </tr>
+            <tr>
+                <td>2022-6-3</td>
+                <td>制作technology页面</td>
+            </tr>
+            <tr>
+                <td>2022-6-1</td>
+                <td>制作source页面</td>
+            </tr>
+            <tr>
+                <td>2022-4-27</td>
+                <td>制作介绍页面</td>
+            </tr>
+            <tr>
+                <td>2022-4-25</td>
+                <td>制作首页</td>
+            </tr>
+        </table>
+    </div>
+    <div id="foot"></div>
+</body>
+</html>

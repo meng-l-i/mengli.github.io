@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1.0" />
+    <title>登录</title>
+    <script src="js/jquery.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <script src="js/login.js" charset="utf-8"></script>
+    <meta name="author" cotent="萌狸" />
+    <base href="images/" target="_blank" />
+</head>
+<body>
+    <div id="top">
+        <img src="symbol.png" width="102" height="76" />
+        <img src="font.png" id="font" />
+        <div class="menu-icon"></div>
+    </div>
+    <div id="topmenu">
+        <ul>
+            <li onclick="if (sessionStorage.getItem('user') == null)window.open('../login.html')" id="myuser">未登录</li>
+            <li onclick="addlove()" width="100%">收藏</li>
+            <li onclick="out1()" width="100%">关于</li>
+        </ul>
+    </div>
+    <div id="head">
+        <ul id="headlist">
+            <li onclick="window.open('../index.html')">首页</li>
+            <li onclick="window.open('../introduction.html')">介绍</li>
+            <li onclick="window.open('../article.html')">文章</li>
+            <li onclick="window.open('../source.html')">学习资源</li>
+            <li onclick="window.open('../technology.html')">技术介绍</li>
+            <li onclick="window.open('../update.html')">维护记录</li>
+        </ul>
+    </div>
+    <div id="content">
+        <div>这里是登录窗口<br />由于不可抗力因素，阅读首页以外的页面都需要进行登录操作</div>
+        <from>
+            username&nbsp;:&nbsp;<input type="text" name="user" id="userinput" /><br />
+            password&nbsp;:&nbsp;<input type="password" name="password" id="passwordinput" /><br />
+            <input value="登录" type="button" id="sureinput" />
+            &nbsp; &nbsp; &nbsp;
+            <input value="注册" type="button" id="newinput" />
+        </from>
+    </div>
+    <div id="foot"></div>
+</body>
+</html>
