@@ -58,9 +58,17 @@ $(function () {
         event.stopPropagation();
     });
     window.out1 = function () {//创建简要信息
+        t++;
         $("*").css("cursor", "url(mouse.ico),auto");
         $("body").append("<div id=\"about\"><h style=\"font-size:30px;font-weight:700;\">about it</h><br>author:萌狸<br>contact:2574792845@qq.com<br><br><p style=\"\">click outside<\p></div> ");
         $("#about").css("cursor", "copy");
+        if (t == 3) {
+            alert("All right.\nAre you really idle?");
+        }
+        if (t == 4) {
+            alert("Well. Since you are so idle, let you read my memories.");
+            window.location.href = "../memories.html";
+        }
     }
     if (sessionStorage.getItem("user") == null) {
        // alert('请先登录');
