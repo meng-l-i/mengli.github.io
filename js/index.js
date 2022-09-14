@@ -14,6 +14,7 @@
                 但是无论是专业学习者，还是业余爱好者，<br />都需要有一个明确的技术路线，适当的技术帮助。<br />本网站选取了一些有助于初学者的文章和资源。希望帮助到你。', 40, "read");
 }
 $(function () {
+    t = 0;
     window.onload = function () {
         function showtext(text, time, id) {//text是跳出的文字，time是跳出的间隔，id是需要设定文字跳动的标签id
             var num = text.length, i = 1;
