@@ -1,4 +1,5 @@
-﻿window.onload = function () {//这个是控制字一个个跳出。
+t = 0;
+window.onload = function () {//这个是控制字一个个跳出。
     function showtext(text, time, id) {//text是跳出的文字，time是跳出的间隔，id是需要设定文字跳动的标签id
         var num = text.length, i = 1;
         function show() {
@@ -13,8 +14,8 @@
     showtext('编程对于许多人来说其实并不是高高在上的一种技术。<br />只要肯认真学习，<br />仍然还是可以把握最基本的编程能力，制作出一个令人满意的作品。<br />\
                 但是无论是专业学习者，还是业余爱好者，<br />都需要有一个明确的技术路线，适当的技术帮助。<br />本网站选取了一些有助于初学者的文章和资源。希望帮助到你。', 40, "read");
 }
+
 $(function () {
-    t = 0;
     window.onload = function () {
         function showtext(text, time, id) {//text是跳出的文字，time是跳出的间隔，id是需要设定文字跳动的标签id
             var num = text.length, i = 1;
