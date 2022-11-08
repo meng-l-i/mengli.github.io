@@ -1,4 +1,3 @@
-t = 0;
 window.onload = function () {//这个是控制字一个个跳出。
     function showtext(text, time, id) {//text是跳出的文字，time是跳出的间隔，id是需要设定文字跳动的标签id
         var num = text.length, i = 1;
@@ -16,6 +15,7 @@ window.onload = function () {//这个是控制字一个个跳出。
 }
 
 $(function () {
+    t = 0;
     window.onload = function () {
         function showtext(text, time, id) {//text是跳出的文字，time是跳出的间隔，id是需要设定文字跳动的标签id
             var num = text.length, i = 1;
